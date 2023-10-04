@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Barra de navegação -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <ul class="nav">
+                    <img src="icons/logo.png" id="logo" class="img-fluid">
+                </ul>
+            </div>
+        </div>
+        <!-- Conteúdo principal -->
+        <div class="row justify-content-center">
+            <!-- Coluna com informações principais -->
+            <div class="col-12 col-sm-6 col-md-4 text-left" id="saiba-mais">
+                <h2>Sinta o conforto acolhedor de nossas hospedagens</h2>
+                <p>hospede-se nos nossos hotéis com quartos a partir de R$ 100,00.</p>
+                <input type="button" class="btn btn-primary" value="Saiba mais">
+            </div>
+            <!-- Coluna com a imagem do hotel -->
+            <div class="col-12 col-sm-6 col-md-5">
+                <img src="img/hotel.jpg" id="fotoHotel" class="img-fluid">
+            </div>
+        </div>
+        <!-- Informações adicionais -->
+        <div class="col-sm-12 text-center" id="informacoes">
+            <h4>POR QUE SE HOSPEDAR EM NOSSOS HOTÉIS ?</h4>
+            <div class="row justify-content-center">
+                <div class="col-sm-3 text-center">
+                    <img src="icons/cafe.png" id="icon-cafe" class="mr-2 img-fluid">
+                    <div id=>
+                        <h4>Delicioso café da manhã</h4>
+                        <p>incluso em todas as diárias</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 text-center">
+                    <img src="icons/local.png" id="icon-local" class="mr-2 img-fluid">
+                    <div>
+                        <h4>Fácil acesso</h4>
+                        <p>Perto dos principais pontos turísticos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- exibição de quartos-->
+        <div class="row justify-content-center text-center">
+            <h4>Nossos Quartos</h4>
+            <div class="col-md-4 col-sm-6 text-center" id="solteiro">
+                <img src="img/solteito.jpg" class="img-fluid">
+                <h6>Suíte Solteiro</h6>
+            </div>
+            <div class="col-md-4 col-sm-6 text-center" id="casal">
+                <img src="img/casal.jpg" class="img-fluid">
+                <h6>Suíte Casal</h6>
+            </div>
+            <div class="col-md-4 col-sm-6 text-center" id="master">
+                <img src="img/master.jpg" class="img-fluid">
+                <h6>Suíte Master</h6>
+            </div>
+        </div>
+        <!--reserva de quartos-->
+        <div class="row justify-content-center" id="reserva">
+            <div class="col-12 col-sm-6 col-md-4 text-left" id="texto-reserva">
+                <h4>FAÇA SUA RESERVA</h4>
+                <p>Entre em contato conosco informando as datas desejadas. Lhe retornaremos informando a disponibilidade
+                    e repassando detalhes da reserva</p>
+            </div>
+            <!--formulario de reserva-->
+            <div class="col-12 col-sm-6 col-md-5" id="formulario-reserva">
+                <form>
+                    <div class="mb-3 row">
+                        <div class="col">
+                            <label for="txtNome" class="form-label">Nome:</label>
+                            <input id="txtNome" class="form-control" type="text">
+
+                            <label for="txtEntrada" class="form-label">Data de entrada:</label>
+                            <input id="txtEntrada" class="form-control" type="date">
+
+                            <label for="txtObs" class="form-label">Observações:</label>
+                            <textarea id="txtObs" class="form-control" rows="4"></textarea>
+                        </div>
+                        <div class="col">
+                            <label for="txtEmail" class="form-label">Email:</label>
+                            <input id="txtEmail" class="form-control" type="email">
+
+                            <label for="txtSaida" class="form-label">Data de saida:</label>
+                            <input id="txtSaida" class="form-control" type="date">
+                            <div class="mb-3 row">
+                                <div class="col">
+                                    <label for="txtAdultos" class="form-label">Adultos:</label>
+                                    <input id="txtAdultos" class="form-control" type="number">
+                                </div>
+                                <div class="col">
+                                    <label for="txtCriancas" class="form-label">Crianças:</label>
+                                    <input id="txtCriancas" class="form-control" type="number">
+                                </div>
+                            </div>
+                            <input type="button" id="btnEnviar" class="btn btn-primary" value="Enviar">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
